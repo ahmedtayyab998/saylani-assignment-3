@@ -1,0 +1,752 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'open-sans', Helvetica, sans-serif;
+    font-size: .85rem;
+    font-weight: 400;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    background-color: white;
+}
+.clearfix{
+    zoom: 1;
+}
+.clearfix:after{
+    display: block;
+    visibility: hidden;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+/* 
+---------------------------------
+Responsive CSS
+-----------------------------------
+*/
+.containerz{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: auto;
+}
+.containerz:before,.containerz:after{
+    content: "";
+    display: table;
+}
+.containerz:after{
+    clear: both;
+}
+.rowz{
+    zoom: 1;
+    max-width: 1140px;
+    margin: 0 -15px;
+    padding: 0;
+
+}
+.rowz::before,.rowz::after{
+    content: "";
+    display: table;
+}
+.rowz::after{
+    clear: both;
+}
+.header-top-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.colz{
+    display: flex;
+    text-align: center;
+   width: 100%;
+
+}
+.spanz-1-of-1{
+    width: 100%;
+}
+.spanz-1-of-2{
+    width: 50%;
+}
+.spanz-1-of-3{
+    width: 33.33%;
+}
+.spanz-1-of-4{
+    width: 25%;
+}
+.spanz-2-of-3{
+    width: 66.66%;
+}
+.spanz-2-of-4{
+    width: 50%;
+}
+
+/* 
+-------------------------------------------------------------------
+                -------------HEADINGS----------
+-------------------------------------------------------------------
+*/
+H1{
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 15px;
+}
+h3{
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 15px;
+}
+
+h5{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Merriweather',serif;
+    margin: 0 auto;
+}
+p{
+    font-size: .85rem;
+    text-align: center;
+    padding: 0 15px;
+}
+ul{
+   text-align: center;
+   display: flex;
+   align-items: center;
+   margin: 0;
+}
+li{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+
+}a{
+    text-decoration: none;
+    
+    
+}
+
+/* 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+                                                               HEADER
+----------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.header-top-top{
+    background-color: #316DC3;
+    line-height: 3rem;
+    
+    
+}
+.header-top-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.colz{
+    display: flex;
+    text-align: center;
+   width: 100%;
+
+}
+/* 
+-------------------------------------------------------------------
+                -------------HEADER TOP----------
+-------------------------------------------------------------------
+*/
+.header-top-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+/* 
+---------------------------------
+Social icons head
+---------------------------------
+*/
+.s-icon{
+    font-size: 14px;
+    width: 277.5px;
+    margin: 0;
+    padding: 0 15px;
+    
+}
+.s-icon ul{
+    margin: 0;
+    padding:0;
+}
+.iconz{
+    color: rgb(255, 255, 255);
+}
+.s-icon ul li{
+    display: inline-block;
+    
+    margin: 0;
+    padding:0px 8px;
+}
+.s-icon ul li a{
+    text-decoration: none;
+    margin: 0;
+    padding:5px;
+   
+    
+}
+.s-icon  li a:hover{
+    background-color: #7c9fcf7a;
+}
+.iconz-w{
+    color: #25D366;
+}
+/* 
+---------------------------------
+Content head
+---------------------------------
+*/
+.h-content{
+    width: 555px;
+    font-size: 15px;
+    color: white;
+    
+    padding: 0 15px;
+    margin: 0;
+}
+/* 
+---------------------------------
+Button head
+---------------------------------
+*/
+.h-btn{
+    width: 277.5px;
+    margin: 0;
+    padding: 0 15px;
+   font-size: 11px;
+   font-weight: 100;
+  
+    
+}
+.h-btn ul{
+    
+    margin:0;
+    padding: 0;
+}
+
+.h-btn li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+   
+}
+.h-btn ul li a{
+    
+    text-decoration: none;
+    color: #427900;
+    border: 1px black solid;
+    background-color: white;
+    padding: 7px 10px;
+    margin: 0;
+    
+   
+}
+/* 
+-------------------------------------------------------------------
+                -------------HEADER BOTTOM----------
+-------------------------------------------------------------------
+*/
+.header-top-bottom{
+    background-color: #F7F8FA;
+    margin: 0;
+}
+.header-top-bottom:before{
+    clear: both;
+}
+/* 
+--------------------------------------------------
+            ------NAV BAR----------
+-------------------------------------------------
+*/
+.nav-container{
+    
+    width: 100%;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    flex-wrap: wrap;
+    
+}
+.saylani-logo{
+    width: 200px;
+    margin: 10px 30px 5px 0;
+   
+    
+    
+    
+}
+.mobile-nav{
+    display: none;
+}
+.about-drop-bar{
+    display: none !important;
+}
+.nav-bar-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.nav-bar{
+    padding: 0 15px 0 0;
+}
+.nav-bar li{
+    padding: 18px 0;
+    display: inline-block;
+}
+.nav-bar-links .actives > a{
+color: white;
+background-color: #316DC3;
+
+}
+.nav-bar-links li a{
+    color: #333333;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 30px;
+    display: inline-block;
+    text-decoration: none;
+    outline: 0;
+    line-height: 1.42857143;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-bar-links li :hover{
+    color: white;
+background-color: #316DC3;
+}
+  
+
+
+/* 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+                                                               SECTION
+----------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+section{
+    clear: both;
+}
+/* 
+--------------------------------------------------
+            ------slide BAR----------
+-------------------------------------------------
+*/
+.d-block{
+    height: 81vh;
+}
+/* 
+--------------------------------------------------
+            ------slide line----------
+-------------------------------------------------
+*/
+.slide-line-container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 ;
+}
+.slide-line{
+    background-color: #316DC3;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.7rem;
+    margin: 13px 0;
+}
+.green{
+color:#10CE41 ;
+}
+.white{
+color:#D0DEF1 ;
+}
+.blue{
+color: #0000FF;
+}
+/* 
+--------------------------------------------------
+            ------INTRODUCTION----------
+-------------------------------------------------
+*/
+.introz{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.introduction{
+    background-color: #F7F8FA;
+    margin: 0;
+}
+.introduction h1{
+    font-family: 'Merriweather';
+    font-weight: 600;
+    
+}
+.bl{
+    color: #316DC3;
+    font-family: 'Merriweather';
+    font-weight: 600;
+}
+.gr{
+color: #427900;
+font-family: 'Merriweather';
+    font-weight: 600;
+}
+.saylani-icon{
+    text-align: center;
+    max-width: 160px;
+    margin: auto;
+
+}
+.saylani-icon img{
+    width: 40px;
+    height: 40px;
+    
+    margin: 0 15px 20px 15px;
+}
+hr{
+    background-color: #427900;
+    display: inline-block;
+    height: 1px;
+    width: 36px;
+    margin: 0 auto;
+}
+.intro-content{
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+    
+}
+.intro-content p{
+    text-align: justify;
+    visibility: visible;
+    color: #666666;
+    
+    font-family: 'Open Sans', sans-serif;
+}
+/* 
+--------------------------------------------------
+            ------NUMBER SECTION----------
+-------------------------------------------------
+*/
+.number-counter{
+    background-color: #2755E9;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 50px 0;
+}
+.number-box{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+   
+}
+.num-sec{
+    width: 285px;
+    text-align: center;
+    margin: 0 ;
+    padding: 0 15px;
+    color: white;
+    
+}
+.num-sec div{
+    line-height: 4.6rem;
+}
+.num-sec img{
+    width: 40px;
+    height: 40px;
+}
+.num-c{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Merriweather';
+}
+.gr-color{
+    color: #00ff00;
+   
+}
+/* 
+--------------------------------------------------
+            ------WAHAT WE DO----------
+-------------------------------------------------
+*/
+.what-we-do{
+    padding: 60px 0;
+    margin: 0 auto;
+    background-color: #F7F8FA;
+}
+.service-box{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.service-sec {
+    width: 380px;
+    padding: 0 15px;
+}
+.service-position{
+    padding: 30px;
+    margin-bottom: 15px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);
+}
+.service-sec img{
+    width: 70px;
+    height: 70px;
+    
+}
+.service-sec h3{
+    line-height: 4rem;
+    color: #316DC3;
+    font-family: 'Merriweather',serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+/* 
+--------------------------------------------------
+            ------PROJECTS AND EVENTS----------
+-------------------------------------------------
+*/
+.projects-events{
+    padding: 50px 0;
+
+}
+.inside-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project-box{
+width: 790px;
+padding: 0 15px;
+
+}
+.event-box{
+    width: 330px;
+
+padding: 0 15px;
+
+}
+.project-content:after{
+    display: block;
+    content: "";
+    background-color: #3f7200;
+    height: 2px;
+    width: 50px;
+    text-align: left;
+}
+.upcoming-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+    padding: 30px 0;
+    
+}
+.proj{
+    display: flex;
+    align-items: stretch;
+    width: 370px;
+    line-height: 4.5rem;
+    border: 1px solid #eeeeee ;
+    box-shadow: inset 0 0 0 40px #F7F8FA;
+    margin: 0 10px 20px 0px;
+    padding: 0 15px;
+    
+}
+.proj img{
+    width: 35px;
+    height: 35px;
+}
+.proj span p{
+    color: #316DC3;
+    font-family: 'Merriweather',serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+.event-content:after{
+    display: block;
+    content: "";
+    background-color: #3f7200;
+    height: 2px;
+    width: 50px;
+    text-align: left;
+    margin: 0;
+    
+}
+.project-content h3,.event-content h3{
+    text-align: left;
+    color: #316DC3;
+    font-family: 'Merriweather',serif;
+    font-size: 1.5rem ;
+    font-weight: 700;
+    margin: 0;
+    padding: 15px 0;
+}
+.event-box p{
+    padding: 30px 30px 30px 0;
+    text-align: left;
+
+
+}
+.event-box p a{
+    color: #5E5EFF;
+    font-weight: 500;
+}
+
+/* 
+--------------------------------------------------
+            ------IMAGE GALLERY----------
+-------------------------------------------------
+*/
+.img-gallery{
+    padding-bottom: 180px;
+}
+.gallery-img-sec{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 10px 0;
+
+}
+.gallery-images{
+    
+    display: flex;
+    
+    position: relative;
+    
+}
+.gallery-images img{
+    width: 226px;
+    
+
+    padding: 1px;
+}
+.gallery-images img:hover{
+    opacity: .2;
+    
+}
+.img-download-icon{
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.img-download-icon:hover{
+    visibility:inherit ;
+    position: absolute;
+    background-color: yellow;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* 
+--------------------------------------------------
+            ------FOOTER TOP----------
+-------------------------------------------------
+*/
+.footer-section{
+    background-color: #25272E;
+    padding: 70px 0;
+    
+}
+.footer-top-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+}
+.footer-box{
+    
+    text-align: left;
+color:#ADADAE;
+line-height: 1.7rem;
+padding: 10px 20px;
+
+
+}
+.footer-box p{
+    color: #FFFFFF;
+    font-family: 'Merriweather',serif;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    line-height: 1.7rem;
+    
+}
+.f-icon{
+    color: #427900;
+    font-size: 12px;
+    font-weight: 600;
+}
+.useful-link{
+    text-align: left;
+}
+.thick hr{
+    background-color: #427900;
+    height: 1px;
+    width: 70px;
+    
+    
+
+}
+.thin hr{
+    background-color: #444444;
+    height: 1px;
+    width: 280px;
+    
+}
+.footer-hr{
+    padding-left: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.footer-icons{
+    font-size: 11px;
+    padding-left:20px ;
+    padding-top:5px ;
+}
+/* 
+--------------------------------------------------
+            ------FOOTER BOTTOM----------
+-------------------------------------------------
+*/
+.footer-bottom{
+    background-color: #316DD9;
+    margin: 0;
+}
+.f-bottom p{
+
+    color: #ffffff;
+    font-size: .75rem;
+    text-align: left;
+    line-height: 1.5rem;
+    margin: 10px 0;
+    font-weight: 400;
+}
